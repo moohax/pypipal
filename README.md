@@ -2,9 +2,10 @@
 Simple script that implements Pipal in python. Thanks to the original authors of pipal and @culturedphish for providing the excel stuff.
 
 ## Requirements
-Uses Python3 and Pandas
+Python3, pandas, and xlsxwriter
 ```python
 pip install pandas
+pip install xlsxwriter
 ```
 A file of hashes should look as follows:
 
