@@ -1,5 +1,5 @@
 # pypipal
-Simple script that implements Pipal in python. Thanks to the original authors of pipal and @culturedphish for providing the excel stuff.
+Simple script that implements pipal in python. Thanks to the original authors of pipal and @culturedphish for providing the excel stuff.
 
 ## Requirements
 Python3, pandas, and xlsxwriter
