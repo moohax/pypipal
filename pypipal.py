@@ -264,7 +264,7 @@ def main(args):
     worksheet.insert_chart('D70', chart5, {'x_offset': 25, 'y_offset': 10})
     print('[+] Excel written, saving...')
 
-    writer.save()
+    writer._save()
     print('[+] Here you go, {}'.format(args.outfile))
 
 if __name__ == '__main__':
