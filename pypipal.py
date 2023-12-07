@@ -9,7 +9,7 @@ if sys.version_info.major != 3:
 def main(args):
 
     #Read file
-    data = pd.read_csv(args.infile, delimiter=args.sep, header=None, names=['Hash','Password'])
+    data = pd.read_csv(args.infile, dtype='string', delimiter=args.sep, header=None, names=['Hash','Password'])
 
     #Build out master dataframe
     #basewords
