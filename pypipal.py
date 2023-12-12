@@ -9,7 +9,7 @@ if sys.version_info.major != 3:
 def main(args):
 
     #Read file
-    data = pd.read_csv(args.infile, args.sep, header=None, names=['Hash','Password'])
+    data = pd.read_csv(args.infile, dtype='string', delimiter=args.sep, header=None, names=['Hash','Password'])
 
     #Build out master dataframe
     #basewords
@@ -264,7 +264,7 @@ def main(args):
     worksheet.insert_chart('D70', chart5, {'x_offset': 25, 'y_offset': 10})
     print('[+] Excel written, saving...')
 
-    writer.save()
+    writer._save()
     print('[+] Here you go, {}'.format(args.outfile))
 
 if __name__ == '__main__':
